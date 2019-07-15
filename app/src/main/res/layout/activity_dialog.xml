@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    >
+    <RelativeLayout
+        android:id="@+id/rv"
+        android:background="@drawable/shape_corner"
+        android:layout_width="@dimen/dp_270"
+        android:layout_centerHorizontal="true"
+        android:layout_height="@dimen/dp_270">
+        <ImageView
+            android:id="@+id/image_icon"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/tou"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_70" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_marginTop="12dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/image_icon"
+            android:textSize="@dimen/sp_17"
+            android:textStyle="bold"
+            android:text="实名认证"
+            android:textColor="#333333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/message"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/title"
+            android:textSize="16sp"
+            android:text="这里是测试数据 哈哈哈哈哈哈哈哈 哈哈哈哈哈哈哈"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/goapprove"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/message"
+            android:text="去认证"
+            android:textSize="@dimen/sp_15"
+            android:background="@drawable/button_corner"
+            android:layout_width="@dimen/dp_180"
+            android:layout_height="@dimen/dp_40" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/remove"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rv"
+        android:src="@drawable/remove"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+</RelativeLayout>

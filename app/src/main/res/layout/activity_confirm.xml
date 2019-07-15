@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="667dp"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".authentication.ConfirmActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_height="64dp">
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_60">
+            <ImageView
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_18"
+                android:background="@drawable/back"
+                android:layout_marginTop="@dimen/dp_19"
+                android:layout_marginLeft="@dimen/dp_13"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="129dp"
+            android:text="确认个人信息"
+            android:textColor="#333333"
+            android:layout_marginTop="19dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F2F2F2"
+        android:layout_gravity="center_horizontal"
+        ></View>
+
+    <LinearLayout
+        android:id="@+id/mymessage"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/dp_12"
+            android:layout_marginLeft="@dimen/dp_12"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名"
+                    android:layout_marginTop="@dimen/dp_21"
+                    android:textColor="#ff333333"
+                    android:layout_marginBottom="@dimen/dp_15"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_21"
+                    android:layout_marginBottom="@dimen/dp_16"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="小迷糊"
+                    android:textColor="#ff999999"
+                    android:background="@null"
+
+                    android:textSize="14sp" />
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_25"
+                    android:layout_marginBottom="@dimen/dp_17"
+                    android:src="@drawable/left" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#F2F2F2"
+                android:layout_gravity="center_horizontal"
+                ></View>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/dp_12"
+            android:layout_marginLeft="@dimen/dp_12"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="证件号码"
+                    android:layout_marginTop="@dimen/dp_21"
+                    android:textColor="#ff333333"
+                    android:layout_marginBottom="@dimen/dp_15"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="41038119980216101X"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/dp_21"
+                    android:textColor="#ff999999"
+                    android:background="@null"
+                    android:layout_marginBottom="@dimen/dp_16"
+                    android:textSize="14sp"
+                    />
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#F2F2F2"
+                android:layout_gravity="center_horizontal"
+                ></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="证件有效期"
+                    android:layout_marginTop="@dimen/dp_21"
+                    android:textColor="#ff333333"
+                    android:layout_marginBottom="@dimen/dp_15"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="2020.11.15"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/dp_21"
+                    android:textColor="#ff999999"
+                    android:layout_marginBottom="@dimen/dp_16"
+                    android:textSize="14sp"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_25"
+                    android:layout_marginBottom="@dimen/dp_17"
+                    android:src="@drawable/left" />
+
+
+
+                </LinearLayout>
+
+           <android.support.v7.widget.CardView
+               app:cardCornerRadius="@dimen/dp_5"
+               android:layout_marginTop="@dimen/dp_10"
+               android:layout_gravity="center_horizontal"
+               android:layout_width="@dimen/dp_300"
+               android:layout_height="@dimen/dp_40">
+               <Button
+                   android:id="@+id/sure"
+                   android:text="确定"
+                   android:layout_width="@dimen/dp_300"
+                   android:layout_height="@dimen/dp_40"
+                   android:background="#FF118DE9"
+                   android:textColor="#ffffff"
+                   />
+           </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+</LinearLayout>
